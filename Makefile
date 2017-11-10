@@ -1,14 +1,16 @@
-# Include config if exists
--include  config.make
+# Your resume file
+RESUME ?= resumes/mladen_trampic.yaml
 
-# Put these into config.make to override with your setup
-RESUME ?= resumes/example.yaml
+# Your rsync upload path
 RSYNC_LOCATION ?= example.com:/var/www/resume/
+
+# Here you can also override other variables from Makefile, like BUILD_DIR
+BUILD_DIR ?= /mnt/e/nginx-1.13.6/html/
 
 PYTHON ?= $(shell which python3)
 RSYNC ?= $(shell which rsync)
 RSYNC_ARGS ?= aAXv
-BUILD_DIR ?= build
+
 BUILD_ARGS ?= --output_dir $(BUILD_DIR)
 BUILD ?= $(PYTHON) build.py $(BUILD_ARGS)
 
@@ -25,7 +27,5 @@ pdf:
 	$(BUILD) --format pdf $(RESUME)
 
 clean:
-	@rm -rf ./build
+	@rm -rf $(BUILD_DIR)/*
 
-publish:
-	$(RSYNC) -$(RSYNC_ARGS) $(BUILD_DIR) $(RSYNC_LOCATION)

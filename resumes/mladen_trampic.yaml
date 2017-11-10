@@ -1,0 +1,205 @@
+
+profile:
+    name: Mladen Trampić
+    label: Solution Developer
+    email: mtrampic@hotmail.com
+    phone: +39 392 709 7126
+    birth: 06-02-1989
+    placeOfBirth: Belgrade, Republic of Serbia
+    nationality: Serbian (Non EU)
+    current_address: Padua, Italy (Carta BLU)
+    summary: >
+        Solution Developer with expertises in Big Data ecosystem (Hadoop). Agile and skilled administrator/system integrator, with Python/Java/Bash programming skills.
+        Fascinated by automation.Hacking through sea of information for patterns and best practices to achieve results.
+
+    image: "https://avatars2.githubusercontent.com/u/23447904?s=460&v=4"
+    
+    networks:
+        -   provider: twitter
+            username: MTrampic
+            url: mladen.trampic.info/twitter
+
+        -   provider: github
+            username: Mladen-Trampic-SRB-1989
+            url: mladen.trampic.info/github
+
+        -   provider: linkedin
+            username: mtrampic
+            url: mladen.trampic.info/linkedin
+
+skills:
+    -   area: Programming
+        skills:
+            - Java
+            - Bash
+            - SQL
+            - Python
+            - Scala ( Beginning )
+            - Web ( HTML,CSS,Bootstrap  - Basic Survival )
+
+    -   area: Technology
+        skills:
+            - Git, SVN
+            - PostgreSQL ( GreenPlum / Hawq )
+            - MySQL(MariaDB)
+            - MemSQL ( In memory RDBMS )
+            - Hortonworks HCP - Apache Metron ( Kafka + Storm + HBase/HDFS + MAAS ( Stellar ) ) - Cybersecurity Framework on top Hortonworks HDP
+            - Hortonworks HDF - Apache NiFi
+            - ElasticSearch / Kibana
+            - Hadoop ( HDFS, YARN, Hive, HBase, Phoenix, Flume, Kafka, Oozie, Sqoop, Impala, Hawq, Sentry, ... ) 
+            - Kerberos         
+            - MongoDB
+            - Docker
+            - Ansible ( yaml )
+            - ...
+            
+    -   area: Hadoop Distros
+        skills:
+            - Cloudera
+            - Hortonworks
+            - Pivotal
+            - MapR 
+    -   area: Linux Distros
+        skills:
+            - RedHat
+            - CentOS
+            - Fedora
+            - SUSE
+            - SLES
+            - Ubuntu
+    -   area: Cloud
+        skills:
+            - Amazon Web Services ( EC2, VPC, S3, Route53 )
+            - Hetzner
+            - Microsoft Azure & Private Company Cloud based on Microsoft Azure
+            
+
+    -   area: Languages
+        skills:
+            - Serbian, Mother tongue
+            - English, Fluent
+            - Italian, Fluent
+            - French, Basic Survival
+            - German, Basic Survival
+            - Russian, Basic Survival
+
+work:
+    -   company: MHT Balkan
+        role: Solution Developer
+        website: http://www.mht.net/mht-engineering-mht-balkan/
+        date: May 2015 - Novembre 2015
+        
+             
+    -   company: Engiweb Security SRL, Engineering Group
+        role: Solution Developer
+        date: Novembre 2015 - current
+        website: http://www.eng.it/
+        
+            
+
+
+projects:
+
+    -   name: Ausbo ( Healthcare Bologna )
+        date: May - October 2015
+        role: Backend Java Developer
+        summary: Develop scalable platform for patients healthcare documentation(REST service, based on Jersey framework) on top of hybrid MongoDB/Hadoop architecture, in a way that exposed api can be used by other existing systems. Application had to support full text search based on Apache Solr.
+
+        highlights:
+            - Maven
+            - Jersey ( JSP / Tomcat )
+            - Apache Solr
+            - MongoDB
+            - HDFS/HBase ( Cloudera )
+
+    -   name: BigData & Analytics Competency Center
+        date: May 2015 - Present
+        role: BigData Consultant/System Integrator/Solution Developer 
+        summary: Competency Center made with purpose to introduce BigData and Hadoop into Company. ( New technologies in General )
+        highlights:
+            - Infrastructure ( Cloud / Hardware scouting )
+            - Work closely with Solution Architect to find best solution for use case
+            - Web scrapping ( Flume / NiFi ) for Data Scientists / Development
+            - Teaching / Guiding colleagues on new technologies
+            - Administering LAB Infrastructure
+            - Automation
+            - Technical documentation for tenders
+
+    -   name: Telecom Italia
+        role: BigData Consultant
+        date: October 2017 - Present
+        summary: Infrastructure support / System Integration
+        highlights:
+            - Netezza
+            - IBM DataStage
+            - IBM BigInsights on top of Hortonworks
+            - Hortonworks ( Hive, HDFS )
+            - Admin/Hadoop Workshops
+    -   name: Enel Italia
+        role: BigData Consultant
+        date: April - July 2017 
+        summary: Infrastructure support / System Integration
+        highlights:
+            - Cloudera ( full stack )
+            - Infrastructure support for Data Scientists ( Python )
+            - AWS ( sizing, scalability )
+    -   name: FIAT MOPAR
+        role: BigData Consultant
+        date: March-November 2017 
+        summary: Infrastructure support / System Integration / Automation.
+        highlights:
+            - Pivotal Cloud Foundry
+            - Pivotal ( Hawq, PXF, HDFS, Hive )
+            - RedHat Administration
+            - BashScripting ( Automating Hawq production Database Deployment / Maintenance )
+            - Installation/Maintenance of Hawq Dev environment
+    -   name: FIAT COMAU
+        role: BigData Consultant
+        date: March 2017 - Present
+        summary: Infrastructure support / System Integration 
+        highlights:
+            - Cloudera Administration
+            - SLES / RedHat Administration
+            - Support for Impala/Hive/Spark/NiFi
+    -   name: Italian Government, project PRIVACY
+        role: BigData Consultant
+        date: August 2017 - Present
+        summary: Infrastructure support / System Integration / Development
+        highlights:
+            - Realtime Cybersecurity
+            - Apache Metron ( HCP Hortonworks )
+            - Apache NiFi ( HDF Hortonworks )
+           
+                    
+            
+
+education:
+    -   location: Singidunum University, Faculty of Informatics and Computing, Belgrade, Republic of Serbia
+        date: 2010 - 2015
+        summary: Computer Science with majors in Cryptology
+        degree: Bachelor of Science with Honours in Computer Science
+        thesis: Statistical Testing of Hypothesis using Software tools
+
+courses:
+    -   name: Cloudera Administrator Training for Apache Hadoop ( Certified )
+    -   name: Cloudera Service Enablement Bootcamp
+    -   name: MapR 5.1 Administrator Training ( Certified )
+    -   name: Docker Administration & Operations
+    -   name: CCNA - Certified Cisco Network Administrator
+    -   name: RHCSA200 - RedHat Certified System Administrator Rapid Track course with exam ( Certified )
+    -   name: IBM Netezza
+
+interests:
+    - General Computer Science
+    - Application scalability and performance 
+    - Automation, Continous Integration & Continuous Delivery
+    - Science, Technology, Education
+    - Traveling
+    - Big fan of safaribooksonline <3
+    - Big fan of Coursera <3
+
+
+config:
+    theme: simple
+    github_source: https://github.com/Mladen-Trampic-SRB-1989/resume
+    pdf_file: Mladen_Trampic.pdf

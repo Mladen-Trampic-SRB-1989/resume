@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="icon" href="favicon.ico?v=2" />
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -151,6 +152,15 @@
             <p>
                 Maybe you're just looking for <a href="/">{{ profile.name }}'s resume?</a>
             </p>
+			<p> Or... </p>
+                {% for network in profile.networks %}
+                <ul>
+                  <a href="http://{{ network.url }}">
+                            {{ network.url }}
+                        </a>
+                </ul>
+                {% endfor %}
+              
             <script>
                 var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),GOOG_FIXURL_SITE = location.host;
             </script>
