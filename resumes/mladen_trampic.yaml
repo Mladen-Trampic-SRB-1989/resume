@@ -51,6 +51,7 @@ skills:
             - MongoDB
             - Docker
             - Ansible ( yaml )
+            - Apache, NGINX
             - ...
             
     -   area: Hadoop Distros
@@ -87,12 +88,12 @@ work:
     -   company: MHT Balkan
         role: Solution Developer
         website: http://www.mht.net/mht-engineering-mht-balkan/
-        date: May 2015 - Novembre 2015
+        date: May 2015 - November 2015
         
              
     -   company: Engiweb Security SRL, Engineering Group
         role: Solution Developer
-        date: Novembre 2015 - current
+        date: November 2015 - current
         website: http://www.eng.it/
         
             
