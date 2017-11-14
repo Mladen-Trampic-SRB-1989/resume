@@ -5,7 +5,7 @@ RESUME ?= resumes/mladen_trampic.yaml
 RSYNC_LOCATION ?= example.com:/var/www/resume/
 
 # Here you can also override other variables from Makefile, like BUILD_DIR
-BUILD_DIR ?= /mnt/e/nginx-1.13.6/html/
+BUILD_DIR ?= html
 
 PYTHON ?= $(shell which python3)
 RSYNC ?= $(shell which rsync)
