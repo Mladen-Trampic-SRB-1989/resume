@@ -135,7 +135,7 @@ projects:
 
     -   name: Telecom Italia
         role: BigData Consultant
-        date: October 2017 - Present
+        date: October 2017 - March 2018
         summary: Infrastructure support / System Integration
         highlights:
             - Netezza
@@ -145,7 +145,7 @@ projects:
             - Admin/Hadoop Workshops
     -   name: Enel Italia
         role: BigData Consultant
-        date: April - July 2017 
+        date: April 2017 - April 2018
         summary: Infrastructure support / System Integration
         highlights:
             - Cloudera ( full stack )
