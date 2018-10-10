@@ -1,13 +1,13 @@
 
 profile:
     name: Mladen Trampić
-    label: Solution Developer
+    label: Big Data Cloud Support Engineer
     email: mtrampic@hotmail.com
-    phone: +39 392 709 7126 & +381 63 385 248
+    phone: +353 83 402 9218 & +381 63 385 248
     birth: 06-02-1989
     placeOfBirth: Belgrade, Republic of Serbia
     nationality: Serbian (Non EU)
-    current_address: Padua, Italy (Carta BLU)
+    current_address: Dublin, Ireland
     summary: >
         Solution Developer with expertises in Big Data ecosystem (Hadoop). Agile and skilled administrator/system integrator, with Python/Java/Bash programming skills.
         Fascinated by automation.Hacking through sea of information for patterns and best practices to achieve results.
@@ -52,6 +52,7 @@ skills:
             - Docker
             - Ansible ( yaml )
             - Apache, NGINX
+            - DynamoDB, EMR, Athena, Presto, Glue ETL, S3
             - ...
             
     -   area: Hadoop Distros
@@ -59,7 +60,8 @@ skills:
             - Cloudera
             - Hortonworks
             - Pivotal
-            - MapR 
+            - MapR
+            - Amazon EMR
     -   area: Linux Distros
         skills:
             - RedHat
@@ -68,9 +70,10 @@ skills:
             - SUSE
             - SLES
             - Ubuntu
+            - Amazon Linux
     -   area: Cloud
         skills:
-            - Amazon Web Services ( EC2, VPC, S3, Route53 )
+            - Amazon Web Services
             - Hetzner
             - Microsoft Azure & Private Company Cloud based on Microsoft Azure
             
@@ -93,9 +96,13 @@ work:
              
     -   company: Engiweb Security SRL, Engineering Group
         role: Solution Developer
-        date: November 2015 - current
+        date: November 2015 - May 2018
         website: http://www.eng.it/
-        
+
+    -   company: Amazon Web Services ( Ireland )
+        role: Big Data Cloud Support Engineer
+        date: May 2018 - current
+        website: https://aws.amazon.com/premiumsupport/
             
 
 
