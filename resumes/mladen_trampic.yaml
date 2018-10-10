@@ -15,9 +15,9 @@ profile:
     image: "https://avatars2.githubusercontent.com/u/23447904?s=460&v=4"
     
     networks:
-        -   provider: twitter
-            username: MTrampic
-            url: mladen.trampic.info/twitter
+        -   provider: facebook
+            username: mtrampic
+            url: mladen.trampic.info/facebook
 
         -   provider: github
             username: Mladen-Trampic-SRB-1989
