@@ -27,158 +27,158 @@ profile:
             username: mtrampic
             url: mladen.trampic.info/linkedin
 
-skills:
-    -   area: Programming
-        skills:
-            - Java
-            - Bash
-            - SQL
-            - Python
-            - Scala ( Beginning )
-            - Web ( HTML,CSS,Bootstrap  - Basic Survival )
+#skills:
+#    -   area: Programming
+#        skills:
+#            - Java
+#            - Bash
+#            - SQL
+#            - Python
+#            - Scala ( Beginning )
+#            - Web ( HTML,CSS,Bootstrap  - Basic Survival )
+#
+#    -   area: Technology
+#        skills:
+#            - Git, SVN
+#            - PostgreSQL ( GreenPlum / Hawq )
+#            - MySQL(MariaDB)
+#            - MemSQL ( In memory RDBMS )
+#            - Hortonworks HCP - Apache Metron ( Kafka + Storm + HBase/HDFS + MAAS ( Stellar ) ) - Cybersecurity Framework on top Hortonworks HDP
+#            - Hortonworks HDF - Apache NiFi
+#            - ElasticSearch / Kibana
+#            - Hadoop ( HDFS, YARN, Hive, HBase, Phoenix, Flume, Kafka, Oozie, Sqoop, Impala, Hawq, Sentry, ... )
+#            - Kerberos
+#            - MongoDB
+#            - Docker
+#            - Ansible ( yaml )
+#            - Apache, NGINX
+#            - DynamoDB, EMR, Athena, Presto, Glue ETL, S3
+#            - ...
+#
+#    -   area: Hadoop Distros
+#        skills:
+#            - Cloudera
+#            - Hortonworks
+#            - Pivotal
+#            - MapR
+#            - Amazon EMR
+#    -   area: Linux Distros
+#        skills:
+#            - RedHat
+#            - CentOS
+#            - Fedora
+#            - SUSE
+#            - SLES
+#            - Ubuntu
+#            - Amazon Linux
+#    -   area: Cloud
+#        skills:
+#            - Amazon Web Services
+#            - Hetzner
+#            - Microsoft Azure & Private Company Cloud based on Microsoft Azure
+#
+#
+#    -   area: Languages
+#        skills:
+#            - Serbian, Mother tongue
+#            - English, Fluent
+#            - Italian, Fluent
+#            - French, Basic Survival
+#            - German, Basic Survival
+#            - Russian, Basic Survival
+#
+#work:
+#    -   company: MHT Balkan
+#        role: Solution Developer
+#        website: http://www.mht.net/mht-engineering-mht-balkan/
+#        date: May 2015 - November 2015
+#
+#
+#    -   company: Engiweb Security SRL, Engineering Group
+#        role: Solution Developer
+#        date: November 2015 - May 2018
+#        website: http://www.eng.it/
+#
+#    -   company: Amazon Web Services ( Ireland )
+#        role: Big Data Cloud Support Engineer
+#        date: May 2018 - current
+#        website: https://aws.amazon.com/premiumsupport/
+#
+#
 
-    -   area: Technology
-        skills:
-            - Git, SVN
-            - PostgreSQL ( GreenPlum / Hawq )
-            - MySQL(MariaDB)
-            - MemSQL ( In memory RDBMS )
-            - Hortonworks HCP - Apache Metron ( Kafka + Storm + HBase/HDFS + MAAS ( Stellar ) ) - Cybersecurity Framework on top Hortonworks HDP
-            - Hortonworks HDF - Apache NiFi
-            - ElasticSearch / Kibana
-            - Hadoop ( HDFS, YARN, Hive, HBase, Phoenix, Flume, Kafka, Oozie, Sqoop, Impala, Hawq, Sentry, ... ) 
-            - Kerberos         
-            - MongoDB
-            - Docker
-            - Ansible ( yaml )
-            - Apache, NGINX
-            - DynamoDB, EMR, Athena, Presto, Glue ETL, S3
-            - ...
-            
-    -   area: Hadoop Distros
-        skills:
-            - Cloudera
-            - Hortonworks
-            - Pivotal
-            - MapR
-            - Amazon EMR
-    -   area: Linux Distros
-        skills:
-            - RedHat
-            - CentOS
-            - Fedora
-            - SUSE
-            - SLES
-            - Ubuntu
-            - Amazon Linux
-    -   area: Cloud
-        skills:
-            - Amazon Web Services
-            - Hetzner
-            - Microsoft Azure & Private Company Cloud based on Microsoft Azure
-            
-
-    -   area: Languages
-        skills:
-            - Serbian, Mother tongue
-            - English, Fluent
-            - Italian, Fluent
-            - French, Basic Survival
-            - German, Basic Survival
-            - Russian, Basic Survival
-
-work:
-    -   company: MHT Balkan
-        role: Solution Developer
-        website: http://www.mht.net/mht-engineering-mht-balkan/
-        date: May 2015 - November 2015
-        
-             
-    -   company: Engiweb Security SRL, Engineering Group
-        role: Solution Developer
-        date: November 2015 - May 2018
-        website: http://www.eng.it/
-
-    -   company: Amazon Web Services ( Ireland )
-        role: Big Data Cloud Support Engineer
-        date: May 2018 - current
-        website: https://aws.amazon.com/premiumsupport/
-            
-
-
-projects:
-
-    -   name: Ausbo ( Healthcare Bologna )
-        date: May - October 2015
-        role: Backend Java Developer
-        summary: Develop scalable platform for patients healthcare documentation(REST service, based on Jersey framework) on top of hybrid MongoDB/Hadoop architecture, in a way that exposed api can be used by other existing systems. Application had to support full text search based on Apache Solr.
-
-        highlights:
-            - Maven
-            - Jersey ( JSP / Tomcat )
-            - Apache Solr
-            - MongoDB
-            - HDFS/HBase ( Cloudera )
-
-    -   name: BigData & Analytics Competency Center
-        date: May 2015 - Present
-        role: BigData Consultant/System Integrator/Solution Developer 
-        summary: Competency Center made with purpose to introduce BigData and Hadoop into Company. ( New technologies in General )
-        highlights:
-            - Infrastructure ( Cloud / Hardware scouting )
-            - Work closely with Solution Architect to find best solution for use case
-            - Web scrapping ( Flume / NiFi ) for Data Scientists / Development
-            - Teaching / Guiding colleagues on new technologies
-            - Administering LAB Infrastructure
-            - Automation
-            - Technical documentation for tenders
-
-    -   name: Telecom Italia
-        role: BigData Consultant
-        date: October 2017 - March 2018
-        summary: Infrastructure support / System Integration
-        highlights:
-            - Netezza
-            - IBM DataStage
-            - IBM BigInsights on top of Hortonworks
-            - Hortonworks ( Hive, HDFS )
-            - Admin/Hadoop Workshops
-    -   name: Enel Italia
-        role: BigData Consultant
-        date: April 2017 - April 2018
-        summary: Infrastructure support / System Integration
-        highlights:
-            - Cloudera ( full stack )
-            - Infrastructure support for Data Scientists ( Python )
-            - AWS ( sizing, scalability )
-    -   name: FIAT MOPAR
-        role: BigData Consultant
-        date: March-November 2017 
-        summary: Infrastructure support / System Integration / Automation.
-        highlights:
-            - Pivotal Cloud Foundry
-            - Pivotal ( Hawq, PXF, HDFS, Hive )
-            - RedHat Administration
-            - BashScripting ( Automating Hawq production Database Deployment / Maintenance )
-            - Installation/Maintenance of Hawq Dev environment
-    -   name: FIAT COMAU
-        role: BigData Consultant
-        date: March 2017 - Present
-        summary: Infrastructure support / System Integration 
-        highlights:
-            - Cloudera Administration
-            - SLES / RedHat Administration
-            - Support for Impala/Hive/Spark/NiFi
-    -   name: Italian Government, project PRIVACY
-        role: BigData Consultant
-        date: August 2017 - Present
-        summary: Infrastructure support / System Integration / Development
-        highlights:
-            - Realtime Cybersecurity
-            - Apache Metron ( HCP Hortonworks )
-            - Apache NiFi ( HDF Hortonworks )
-           
-                    
+#projects:
+#
+#    -   name: Ausbo ( Healthcare Bologna )
+#        date: May - October 2015
+#        role: Backend Java Developer
+#        summary: Develop scalable platform for patients healthcare documentation(REST service, based on Jersey framework) on top of hybrid MongoDB/Hadoop architecture, in a way that exposed api can be used by other existing systems. Application had to support full text search based on Apache Solr.
+#
+#        highlights:
+#            - Maven
+#            - Jersey ( JSP / Tomcat )
+#            - Apache Solr
+#            - MongoDB
+#            - HDFS/HBase ( Cloudera )
+#
+#    -   name: BigData & Analytics Competency Center
+#        date: May 2015 - Present
+#        role: BigData Consultant/System Integrator/Solution Developer
+#        summary: Competency Center made with purpose to introduce BigData and Hadoop into Company. ( New technologies in General )
+#        highlights:
+#            - Infrastructure ( Cloud / Hardware scouting )
+#            - Work closely with Solution Architect to find best solution for use case
+#            - Web scrapping ( Flume / NiFi ) for Data Scientists / Development
+#            - Teaching / Guiding colleagues on new technologies
+#            - Administering LAB Infrastructure
+#            - Automation
+#            - Technical documentation for tenders
+#
+#    -   name: Telecom Italia
+#        role: BigData Consultant
+#        date: October 2017 - March 2018
+#        summary: Infrastructure support / System Integration
+#        highlights:
+#            - Netezza
+#            - IBM DataStage
+#            - IBM BigInsights on top of Hortonworks
+#            - Hortonworks ( Hive, HDFS )
+#            - Admin/Hadoop Workshops
+#    -   name: Enel Italia
+#        role: BigData Consultant
+#        date: April 2017 - April 2018
+#        summary: Infrastructure support / System Integration
+#        highlights:
+#            - Cloudera ( full stack )
+#            - Infrastructure support for Data Scientists ( Python )
+#            - AWS ( sizing, scalability )
+#    -   name: FIAT MOPAR
+#        role: BigData Consultant
+#        date: March-November 2017
+#        summary: Infrastructure support / System Integration / Automation.
+#        highlights:
+#            - Pivotal Cloud Foundry
+#            - Pivotal ( Hawq, PXF, HDFS, Hive )
+#            - RedHat Administration
+#            - BashScripting ( Automating Hawq production Database Deployment / Maintenance )
+#            - Installation/Maintenance of Hawq Dev environment
+#    -   name: FIAT COMAU
+#        role: BigData Consultant
+#        date: March 2017 - Present
+#        summary: Infrastructure support / System Integration
+#        highlights:
+#            - Cloudera Administration
+#            - SLES / RedHat Administration
+#            - Support for Impala/Hive/Spark/NiFi
+#    -   name: Italian Government, project PRIVACY
+#        role: BigData Consultant
+#        date: August 2017 - Present
+#        summary: Infrastructure support / System Integration / Development
+#        highlights:
+#            - Realtime Cybersecurity
+#            - Apache Metron ( HCP Hortonworks )
+#            - Apache NiFi ( HDF Hortonworks )
+#
+#
             
 
 education:
