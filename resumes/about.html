@@ -1,21 +1,66 @@
 <!DOCTYPE html>
 <html>
-<title>Hello Strapdown</title>
-
+<title>CV Workflow</title>
 <xmp theme="united" style="display:none;">
-# Markdown text goes in here
 
-## Chapter 1
+## Visual Workflow
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-et dolore magna aliqua.
 
-## Chapter 2
+![Logo Take this from dotcore](./content/cv_doc.jpg)
 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+### Background
+
+This CV came as an idea while I was studying YAML syntax and Ansible, for one of the previous projects. Apache Metron[1] was the framework that I needed to study, and in particular Ansible[2] playbooks in charge for deployment of this framework.
+As I am big fan of automation, and since I never focused on making my CV, I have decided to make one and learn few things in process. Hope you will find my CV interesting.
+
+### Workflow explained
+
+Simply put, this CV is an simple example of "DIY" Continuous Delivery, whose workflow starts from [https://github.com/Mladen-Trampic-SRB-1989/resume/blob/master/resumes/mladen_trampic.yaml](https://github.com/Mladen-Trampic-SRB-1989/resume/blob/master/resumes/mladen_trampic.yaml) file. Thanks to the integration of DockerHub with GitHub[3], it is possible to configure and integrate these two tools through several simple configuration steps. In a way that DockerHub "Monitor" the GitHub repository, by tracking changes to the source code. When new code has been pushed to the master branch of the repository, DockerHub starts the build process, which is documented in the file https://github.com/Mladen-Trampic-SRB-1989/resume/blob/master/Dockerfile. The result of this "build" is a modified nginx docker container, which on launch listens on port 80, and hosts a static web page (html, compiled from YAML). However, Workflow does not end with the build of the Docker Container, because it needs to be delivered to the end-server. In this case, this was accomplished with the DockerHub WebHook[4]. At the final destination, there is a CentOS 7 linux server, with Docker Engine installed, and a simple Python REST application that runs on a specific port, using an HTTPS protocol (self signed certificate). After successful WebHook Authentication and POST call, python application will run the bash script deploy_container.sh. And the script will stop the current version of the contras and refresh image with new one from DockerHub repository.
+
+```Bash
+#!/bin/bash
+# Contents of deploy_container.sh
+
+IMAGE = 'mtrampic / resume'
+docker ps | grep $ IMAGE | awk '{print $ 1}' | xargs docker stop
+docker pull $ IMAGE
+docker run -d -p 80:80 $ IMAGE
+```
+
+For the maintenance / upkeep of the Python application, there is a systemd configuration [5][6].
+
+```Bash
+# Contents of: /etc/systemd/system/docker_deploy_application.service
+[Unit]
+Description=docker-deployer
+After=multi-user.target
+
+[Service]
+Type=idle
+PIDFile=/var/run/docker-deployer.pid
+ExecStart=/bin/sh -c '/usr/local/bin/docker-deployer -c /home/trampic/deploy_container.sh >> /home/trampic/docker-deployer.log 2>&1 '
+ExecStartPost=/bin/sh -c 'umask 022; systemctl status docker-deployer | grep -w \'Main PID:\' | grep -v \'/var/run/docker-deployer.pid\' | grep -v \'grep -w\' | awk \'{print $3}\'> /var/run/docker-deployer.pid'
+RemainAfterExit=no
+RestartSec=5s
+Restart=always
+[Install]
+WantedBy=multi-user.target
+```
+
+**RESOURCES**
+
+[1] HCP Metron: https://hortonworks.com/products/data-platforms/cybersecurity/
+
+[2] HCP Metron Ansible: https://github.com/apache/metron/tree/master/metron-deployment/ansible
+
+[3] Github & DockerHub: https://docs.docker.com/docker-hub/github/#changing-the-github-user-link
+
+[4] DockerHub WebHooks: https://docs.docker.com/docker-hub/webhooks/
+
+[5] RedHat SystemD: https://access.redhat.com/articles/754933
+
+[6] Working with SystemD: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/sect-managing_services_with_systemd-unit_files
+
 </xmp>
 
 <script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
