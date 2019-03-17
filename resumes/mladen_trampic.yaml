@@ -102,10 +102,14 @@ work:
         website: http://www.eng.it/
 
     -   company: Amazon Web Services ( Ireland )
-        role: Big Data Cloud Support Engineer
-        date: May 2018 - current
+        role: Cloud Support Engineer I - Big Data
+        date: May 2018 - January 2019
         website: https://aws.amazon.com/premiumsupport/
 
+    -   company: Raiffeisen Bank International AG
+        role: Datalake Engineer
+        date: March 2019 - current
+        website: https://www.rbinternational.com/
 
 
 projects:
