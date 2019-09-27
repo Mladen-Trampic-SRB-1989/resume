@@ -1,9 +1,9 @@
 
 profile:
     name: Mladen Trampić
-    label: Datalake Engineer
+    label: Datalake Solution Architect
     email: mtrampic@hotmail.com
-    phone: +43 681 8483 1344 ( gsm )& +381 63 385 248 ( whatsapp / viber )
+    phone: +43 681 8483 1344 ( gsm ) & +381 63 385 248 ( whatsapp / viber )
     birth: 06-02-1989
     placeOfBirth: Belgrade, Republic of Serbia
     nationality: Serbian (Non EU)
@@ -95,7 +95,6 @@ work:
         website: http://www.mht.net/mht-engineering-mht-balkan/
         date: May 2015 - November 2015
 
-
     -   company: Engiweb Security SRL, Engineering Group
         role: Solution Developer
         date: November 2015 - May 2018
@@ -108,7 +107,12 @@ work:
 
     -   company: Raiffeisen Bank International AG
         role: Datalake Engineer
-        date: March 2019 - current
+        date: March 2019 - August 2019
+        website: https://www.rbinternational.com/
+    
+    -   company: Raiffeisen Bank International AG
+        role: Datalake Solution Architect
+        date: August 2019 - current
         website: https://www.rbinternational.com/
 
 
