@@ -13,6 +13,6 @@ COPY default.conf /etc/nginx/conf.d/default.conf
 RUN cd resume && make html
 RUN cd resume && make pdf
 RUN rm -rf /usr/share/nginx/html && mv resume/html /usr/share/nginx/
-RUN cp resume/resumes/some_nice_collection_of_links.html /usr/share/nginx/html/ cp resume/resumes/about.html /usr/share/nginx/html/ && mkdir /usr/share/nginx/html/content/ && cp resume/resumes/content/cv_doc.jpg /usr/share/nginx/html/content/
+RUN cp resume/resumes/some_nice_collection_of_links.html /usr/share/nginx/html/ && cp resume/resumes/about.html /usr/share/nginx/html/ && mkdir /usr/share/nginx/html/content/ && cp resume/resumes/content/cv_doc.jpg /usr/share/nginx/html/content/
 ADD ./supervisord.conf /etc/supervisord.conf
 CMD ["/usr/bin/supervisord", "-n"]
